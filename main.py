@@ -117,4 +117,6 @@ async def analyze_lead(lead: LeadIntake):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8888)
+    # Get the port from Render's environment, default to 8888 for local dev
+    port = int(os.environ.get("PORT", 8888))
+    uvicorn.run(app, host="0.0.0.0", port=port)
