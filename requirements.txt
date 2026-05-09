@@ -1,7 +1,7 @@
-fastapi==0.110.0
-uvicorn==0.27.1
+fastapi
+uvicorn
+pydantic==2.10.0
+pydantic-core==2.27.0
 google-genai==0.3.0
-pydantic==2.6.3
-python-dotenv==1.0.1
-markdown==3.5.2
-fpdf2==2.8.1
+python-dotenv
+fpdf
